@@ -84,7 +84,7 @@ player_options = players['full_name'].to_dict()
 coach_options = coaches['name'].to_dict()
 
 #%% Roster Toggles
-st.title("Devon Prep Baseball Roster")
+st.title("Sample Baseball Roster")
 ptoggle = st.toggle('Pitchers?')
 if ptoggle:
     fplayers = players.query('pitcher == True & active == True')[['first_name','last_name','class']]
