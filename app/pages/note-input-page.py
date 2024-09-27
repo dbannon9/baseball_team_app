@@ -109,8 +109,10 @@ if note_submit:
         'note': note_note
     }
 
+    df = pd.DataFrame(new_note)
+
     # Push using insert function
-    response = supabase.table("notes").insert(new_note.reset_index(40)).execute()
+    response = supabase.table("notes").insert(df.reset_index(40)).execute()
 
     # Mark the form as submitted
     st.session_state.form_submitted = True
