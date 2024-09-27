@@ -8,6 +8,9 @@ from decimal import Decimal
 import os
 from supabase import create_client, Client
 
+#%% Make Page Wide
+st.set_page_config(layout="wide")
+
 #%% Connect to Supabase
 
 # Use st.secrets to load the URL and key from secrets.toml
