@@ -110,7 +110,7 @@ if note_submit:
     }
 
     # Push using insert function
-    response = supabase.table("notes").insert(new_note).execute()
+    response = supabase.table("notes").insert(new_note.reset_index(40)).execute()
 
     # Mark the form as submitted
     st.session_state.form_submitted = True
