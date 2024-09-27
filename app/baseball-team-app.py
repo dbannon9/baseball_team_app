@@ -16,22 +16,24 @@ player_page = st.Page("pages/player-page.py",title="Player Summary",icon=":mater
 # coach_page = st.Page("pages/coaches-page.py",title="Coach Summary",icon=":material/sports:")
 calendar_page = st.Page("pages/calendar-page.py",title="Schedule",icon=":material/calendar_month:")
 
-def authenticate():
-    st.sidebar.header('Login')
-    entered_password = st.sidebar.text_input("Password", type='password')
+# def authenticate():
+#     st.sidebar.header('Login')
+#     entered_password = st.sidebar.text_input("Password", type='password')
     
-    # Access the password from secrets
-    correct_password = st.secrets["authentication"]["password"]
+#     # Access the password from secrets
+#     correct_password = st.secrets["authentication"]["password"]
 
-    if entered_password == correct_password:
-        return True
-    elif entered_password:
-        st.sidebar.error("Incorrect password")
-    return False
+#     if entered_password == correct_password:
+#         return True
+#     elif entered_password:
+#         st.sidebar.error("Incorrect password")
+#     return False
 
 #%% Run the App
 
-if authenticate():
-    nav = st.navigation([roster,note_input,player_page,calendar_page])
-    nav.run()
+# if authenticate():
+#     nav = st.navigation([roster,note_input,player_page,calendar_page])
+#     nav.run()
 
+nav = st.navigation([roster,note_input,player_page,calendar_page])
+nav.run()
