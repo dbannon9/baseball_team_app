@@ -86,7 +86,7 @@ player_options = players['full_name'].to_dict()
 coach_options = coaches['name'].to_dict()
 
 #%% Notes
-
+st.write("This page allows you to write notes about a single player, or the a team as a whole. We can customize types, or add categories.")
 st.title('Input New Note')
 
 note_level = st.selectbox('Player Note or Team Note', ["---","Player","Team"])

@@ -55,7 +55,7 @@ event_4_name = ""
 event_4_notes = ""
 
 #%% Input Practice Plans
-
+st.write("This page is where you can input practice plans. You can view practice plans on the tab above.")
 st.title('Create New Practice Plan')
 
 # Input fields for the first event

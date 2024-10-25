@@ -35,6 +35,7 @@ practice_plans = fetch_table_data('practice_plans')
 practice_plans.set_index('id',inplace=True)
 
 #%% View Practice Plans
+st.write("This is where you can see any practice plans for a given day. To input practice plans, see the next tab.")
 st.title("View Practice Plans")
 pdate = st.date_input("Select Practice Date", value=date.today())
 pdate = pdate.strftime('%Y-%m-%d')
