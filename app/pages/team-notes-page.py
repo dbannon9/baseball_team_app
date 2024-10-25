@@ -41,7 +41,7 @@ team_notes = fetch_table_data('team_notes')
 team_notes.set_index('id',inplace=True)
 
 #%% View Team Notes
-
+st.write("This page is where you can view notes you've submitted about a team. For multi-team organizations, we can add a dropdown to select a single team.")
 st.title('Team Notes')
 
 # Merge coach names onto table

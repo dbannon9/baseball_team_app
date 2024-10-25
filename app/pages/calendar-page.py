@@ -35,7 +35,7 @@ schedule = fetch_table_data('schedule')
 schedule.set_index('id',inplace=True)
 
 #%% Schedule Page
-
+st.write("This page is allows you to view upcoming games and/or practices for a team. All fields are customizable, and we can add dropdowns to select certain teams for multi-team organizations.")
 st.title('Schedule')
 
 schedule.rename(columns={

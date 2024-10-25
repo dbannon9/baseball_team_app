@@ -84,7 +84,7 @@ player_options = players['full_name'].to_dict()
 coach_options = coaches['name'].to_dict()
 
 #%% Player Page
-
+st.write("This page is where you can view information about a single player. We can add integrations where you can view video, Rapsodo data, or any other kind of information.")
 st.title('Player Summary Page')
 
 player_select = st.selectbox("Player", options=list(player_options.keys()), format_func=lambda id: player_options[id])
