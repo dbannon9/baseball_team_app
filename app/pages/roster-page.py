@@ -84,6 +84,7 @@ player_options = players['full_name'].to_dict()
 coach_options = coaches['name'].to_dict()
 
 #%% Roster Toggles
+st.text("This page is where you can view your team's roster. For multi-team organizations, we can add a Team Selection dropdown.")
 st.title("Sample Baseball Roster")
 ptoggle = st.toggle('Pitchers?')
 if ptoggle:
