@@ -89,7 +89,20 @@ st.title("Sample Baseball Roster")
 ptoggle = st.toggle('Pitchers?')
 if ptoggle:
     fplayers = players.query('pitcher == True & active == True')[['first_name','last_name','class']]
+    fplayers.rename(columns={
+        'first_name': 'First Name',
+        'last_name': 'Last Name',
+        'class': 'Grade Level'
+        }, inplace=True)
 else:
     fplayers = players[['first_name','last_name','class','pos_1','pos_2','pos_3']].fillna('')
+    fplayers.rename(columns={
+        'first_name': 'First Name',
+        'last_name': 'Last Name',
+        'class': 'Grade Level',
+        'pos_1': 'Primary Position',
+        'pos_2': 'Secondary Position',
+        'pos_3': 'Tertiary Position'
+    }, inplace=True)
 
 st.dataframe(fplayers,hide_index=True)
