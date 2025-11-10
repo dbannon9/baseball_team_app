@@ -4,7 +4,7 @@ primaryColor = "#ffffffff"
 backgroundColor = "#000000ff"
 secondaryBackgroundColor = "#2f2f2fff"
 dataframeBorderColor = "#949caa"
-borderColor = "#eeff00ff"
+borderColor = "#f6ff00ff"
 
 [server]
 fileWatcherType = "none"
