@@ -10,7 +10,7 @@ for p in pathlib.Path(".").rglob("__pycache__"):
 
 #%% page definitions
 
-roster = st.Page("pages/roster-page.py",title="Home",icon=":material/tsunami:")
+roster = st.Page("pages/roster-page.py",title="Home",icon=":material/light_mode:")
 team_leaderboards = st.Page("pages/team-leaderboards.py",title="Leaderboards",icon=":material/social_leaderboard:")
 player_page = st.Page("pages/player-page.py",title="Player Summary",icon=":material/bar_chart:")
 plate_discipline_tracking = st.Page("pages/plate-discipline-tracking.py",title="Plate Discipline Tracking",icon=":material/background_dot_small:")
@@ -34,7 +34,7 @@ def authenticate():
 #%% Run the App
 st.set_page_config(layout="wide")
 
-st.logo(r'app/images/dp_logo_transparent.png', size='large')
+st.logo(r'app/images/gray white logo.png', size='large')
 
 if authenticate():
     nav = st.navigation([
