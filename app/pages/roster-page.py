@@ -94,7 +94,7 @@ player_options = players_show['full_name'].to_dict()
 
 #%% Home Page
  
-st.title("Devon Prep Baseball")
+st.title("HPG Baseball Team")
 
 #%% Roster Toggles
 
