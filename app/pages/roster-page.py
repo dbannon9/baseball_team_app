@@ -96,7 +96,7 @@ player_options = players_show['full_name'].to_dict()
  
 st.title("HPG Baseball Team")
 
-#%% Roster Toggles
+#%% Roster Toggles and Display
 
 st.subheader("Roster & Positions", divider = "yellow")
 edittogglecol, ptogglecol, inactivetogglecol = st.columns(3, gap="medium", border=True)
