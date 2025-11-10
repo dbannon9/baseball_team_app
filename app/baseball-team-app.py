@@ -34,7 +34,7 @@ def authenticate():
 #%% Run the App
 st.set_page_config(layout="wide")
 
-st.logo(r'app/images/lighthouse1.png', size='large')
+st.logo(r'app/images/lighthouse 1.png', size='large')
 
 if authenticate():
     nav = st.navigation([
