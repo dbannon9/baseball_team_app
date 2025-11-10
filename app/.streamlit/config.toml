@@ -1,6 +1,6 @@
 [theme]
 base = "dark"
-primaryColor = "#ffffffff"
+primaryColor = "#FFFF00"
 backgroundColor = "#000000ff"
 secondaryBackgroundColor = "#2f2f2fff"
 dataframeBorderColor = "#949caa"
